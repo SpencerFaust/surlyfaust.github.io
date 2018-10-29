@@ -1,0 +1,204 @@
+<DOCTYPE! html>
+<html>
+<style>
+.tab {
+  overflow: hidden;
+  border: 1px solid;
+  background-color: #BDB2AF;  
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button:active {
+    background-color: #ddd;
+}
+.close {
+  float: right;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+}
+.body {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.address {
+  float: right;
+  position: relative;
+}
+html {
+  font-family: "Helvetica" auto;
+  background-color: #ECE9E8;
+  width: 75%;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border: 1px solid black;
+}
+.contact {
+  margin: 5px;
+}
+#bio {
+  height: 145px;
+  float: right;
+}
+#description {
+  font-style: italic;
+}
+.footer {
+  float: right;
+  height: 30px;
+  padding: 5px
+}
+
+</style>
+<header id = "head"> 
+  <img id = "bio" src = "https://media.licdn.com/dms/image/C5603AQFZyLdcsgfVIg/profile-displayphoto-shrink_200_200/0?e=1545868800&v=beta&t=2bxzR_devI65lwn55SQyrZYLXdTUQlIb0-RZjEJDtL4">
+  <h1 class = "contact">Spencer Faust</h1>
+  <h3 class = "contact">10750 Brunswick Rd. #217</h3>
+  <h3 class = "contact">Bloomington, MN 55438</h3>
+  <h3 class = "contact">612.735.7559</h3>
+  <h3 class = "contact">faus0059@umn.edu</h3>
+</header>
+
+<body onload = "openTab(event, 'welcome')">
+  <div class = "tab">
+    <button class = "tabLink" onclick = "openTab(event, 'welcome')">Welcome</button>
+    <button class = "tabLink" onclick = "openTab(event, 'about')">About Me</button>
+    <button class = "tabLink" onclick = "openTab(event, 'exp')">Experience</button>
+    <button class = "tabLink" onclick = "openTab(event, 'skills')">Skills</button>
+  </div>
+  <div class = "body" id = "welcome">
+    <span class = "close" onclick="this.parentElement.style.display='none'">X</span> 
+    <h3>Welcome to my online resume.</h3>
+    <p>I would like to begin by saying thank you. Thank you for your time and consideration. The webpage you're currently viewing is a digital version of my personal resume. It has been compiled using HTML, CSS and Javascript. Please navigate using the tabs located above and should you wish to contact me my phone number and email are located at the top of the page and links to my Linkedin and Facebook pages are located in the bottom right. <br> <br> Thank you again for you interest and I hope you have a wonderful day!</p>
+  </div>
+  <div class = "body" id = "about">
+    <span class = "close" onclick="this.parentElement.style.display='none'">X</span> 
+    <p>Highly motivated and eager to learn. Ability to work alone or as a memeber of a team as well as switching back and forth between the two with ease. Detail oriented, ogranized and able to track multiple projects at the same time.</p>
+    <ul>
+      <li>University of Minnesota</li>
+      <ul>
+        <li>Twin Cities Campus</li>
+        <li>Bachelor of the Arts in Theater Arts</li>
+      </ul>
+      <li>Southwest High School</li>
+      <ul>
+        <li>International Baccalaureate Program</li>
+        <li>UMTC Theater Arts BFA Collaboration</li>
+      </ul>
+    </ul> 
+  </div> 
+  <div class = "body" id = "exp">
+    <span class = "close" onclick="this.parentElement.style.display='none'">X</span> 
+    <div id = "bby">
+      <h3>Best Buy Corporate</h3>
+      <p id = "description">Workforce Managment Real Time Analyst - Feb 2018 to present</p>
+      <ul>
+        <li>Monitoring daily staffing activity for multiple call center sites.</li>
+        <li>Generating and compiling periodic overview reports for upper level management.</li>
+        <li>Updating process documents and templates used by the workforce team daily using programs including but not limited to:
+          <ul>
+            <li>Outlook</li>
+            <li>Powerpoint</li>
+            <li>Excel</li>
+            <li>CMS</li>
+            <li>Aspect</li>
+          </ul>
+      </ul>
+    </div>
+    <div id = "xfin">
+      <h3>Xfinity Loyalty Center of Excellence</h3>
+      <ul>
+        <li id = "description">Call Volume Coordinator - April 2016 to February 2018</li>
+        <br>
+        <ul>
+          <li>Provide real time assistance up to division VP level.
+          <li>Assist Supervisors and Agents with tasks such as time entry and PTO requests.</li>
+              <li>Create and analyze Excel documents regarding attrition, business shrinkage, call statistics, etc.</li>
+          <li>Responsible for independent and group projects such as new hire training presentations and how to synergize between departments.</li>
+        </ul>
+        <br>
+        <li id = "description">Loyalty Support Central - March 2015 to April 2016</li>
+        <br>
+        <ul>
+          <li>Provide support for 400+ Customer Support Specialists.</li>
+          <li>Assisted in creating and implementing a new training experience for onboarding agents.</li>
+        </ul>
+        <br>
+        <li id = "description">Customer Experience Specialist - April 2013 to March 2015</li>
+        <br>
+        <ul>
+          <li>Assist customers with making changes or cancelations to their services.</li>
+          <li>Answering service and billing questions.</li>
+          <li>Maintaining call metrics within and above the standards set forth.</li>
+        </ul>
+    </div>
+    <div id = "walser">
+        <h3>Walser Automotive Group</h3>
+          <p id = "description">Customer Service Specialist</p>
+          <ul>
+            <li>Provide vehicle recommendations based on customer's stated needs.</li>
+            <li>High quality experience for new an returning customers while in store and on test drives.</li>
+            <li>Maintain contact with 100+ customers at any given time.</li>
+            <li>Explaining and completing leasing agreements and purchasing paperwork with customer purchasing a vehicle.</li> 
+          </ul>
+      </div>       
+  </div>
+  <div class = "body" id = "skills">
+    <span class = "close" onclick="this.parentElement.style.display='none'">X</span> 
+    <p>Skills with specialized training and/or experience:</p>
+    <ul>
+      <li>Public Speaking</li.>
+      <li>Training Presentations</li>
+      <li>Microsoft Excel</li>
+      <li>Microsoft Powerpoint</li>
+      <li>Data Analysis and Presentation</li>
+      <li>Interdepartmental Communication and Synergy</li>
+      <li>Customer Service</li> 
+    </ul>
+  </div>
+  <div>
+          <a href = "http://www.facebook.com/profile.php?id=13900672" target = "_blank">
+        <img src = "https://www.chiediloqui.it/wp-content/uploads/2016/11/fb-logo.png" class = "footer">
+    </a>
+      <a href = "https://www.linkedin.com/in/spencerfaust" target = "_blank">
+        <img src = "http://www.vhtrucks.com/wp-content/uploads/2018/01/linkedin-logo.png" class = "footer">
+    </a>
+  </div>
+<script>
+function openTab(evt, section) {
+  var i, body, tabLink, bdy;
+  
+  body = document.getElementsByClassName("body");
+  for (i = 0; i < body.length; i++) {
+    body[i].style.display = "none";
+  }
+  
+  tabLink = document.getElementsByClassName("tabLink");
+  for (i = 0; i < tabLink.length; i++){
+    tabLink[i].className = tabLink[i].className.replace("active", "");
+  }
+  
+  document.getElementById(section).style.display = "block";
+  evt.currentTarget.className += "active";
+  
+}
+</script>
+</body>
+</html>
+  
