@@ -1,70 +1,4 @@
-<DOCTYPE! html>
 <html>
-<style>
-.tab {
-  overflow: hidden;
-  border: 1px solid;
-  background-color: #BDB2AF;  
-}
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-.tab button:hover {
-    background-color: #ddd;
-}
-.tab button:active {
-    background-color: #ddd;
-}
-.close {
-  float: right;
-  cursor: pointer;
-}
-.close:hover {
-  color: red;
-}
-.body {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-.address {
-  float: right;
-  position: relative;
-}
-html {
-  font-family: "Helvetica" auto;
-  background-color: #ECE9E8;
-  width: 75%;
-  min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-}
-.contact {
-  margin: 5px;
-}
-#bio {
-  height: 145px;
-  float: right;
-}
-#description {
-  font-style: italic;
-}
-.footer {
-  float: right;
-  height: 30px;
-  padding: 5px
-}
-
-</style>
 <header id = "head"> 
   <img id = "bio" src = "https://media.licdn.com/dms/image/C5603AQFZyLdcsgfVIg/profile-displayphoto-shrink_200_200/0?e=1545868800&v=beta&t=2bxzR_devI65lwn55SQyrZYLXdTUQlIb0-RZjEJDtL4">
   <h1 class = "contact">Spencer Faust</h1>
@@ -179,25 +113,6 @@ html {
         <img src = "http://www.vhtrucks.com/wp-content/uploads/2018/01/linkedin-logo.png" class = "footer">
     </a>
   </div>
-<script>
-function openTab(evt, section) {
-  var i, body, tabLink, bdy;
-  
-  body = document.getElementsByClassName("body");
-  for (i = 0; i < body.length; i++) {
-    body[i].style.display = "none";
-  }
-  
-  tabLink = document.getElementsByClassName("tabLink");
-  for (i = 0; i < tabLink.length; i++){
-    tabLink[i].className = tabLink[i].className.replace("active", "");
-  }
-  
-  document.getElementById(section).style.display = "block";
-  evt.currentTarget.className += "active";
-  
-}
-</script>
 </body>
 </html>
   
